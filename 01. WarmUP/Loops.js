@@ -35,17 +35,53 @@
 // console.log(result);
 
 // QUE - 2 Counts negative numbers in an array
-function countNegatives(array) {
-  let count = 0;
-  for (i = 0; i < array.length; i++) {
-    if (array[i] < 0) {
-      count++;
+// function countNegatives(array) {
+//   let count = 0;
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] < 0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// let arr = [-45, 23, 77, 83, 100, 44, -60];
+
+// const result = countNegatives(arr);
+// console.log(result);
+
+// QUE - 3 Find the largest number in an array
+
+// function findLargestNumber(array) {
+//   let largestNum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > largestNum) {
+//       largestNum = array[i];
+//     }
+//   }
+//   return largestNum
+// }
+
+
+// let arr = [-45, 23, 77, 83, 100, 44, -60 ];
+
+// const result = findLargestNumber(arr);
+// console.log(result);
+
+
+// QUE - 4 Find the smallest number in an array
+function findLargestNumber(array) {
+  let smallestNum = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < smallestNum) {
+      smallestNum = array[i];
     }
   }
-  return count;
+  return smallestNum
 }
 
-let arr = [-45, 23, 77, 83, 100, 44, -60];
 
-const result = countNegatives(arr);
+let arr = [-45, 23, 77, 83, 100, 44, -60 ];
+
+const result = findLargestNumber(arr);
 console.log(result);
