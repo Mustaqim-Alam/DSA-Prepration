@@ -8,7 +8,7 @@ console.log( a + b );
 const arr = ["Name ", 23, 4, [9, 34, [32, 54]]]
 
 
-console.log(arr[3][2][1]);
+console.log(arr[3][2][0]);
 
 
 
